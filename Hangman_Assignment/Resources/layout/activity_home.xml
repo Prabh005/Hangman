@@ -1,0 +1,63 @@
+﻿<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:padding="15dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:background="@drawable/welcome" />
+
+
+
+        <TextView
+            android:text="@string/welcomeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="81.5dp"
+            android:id="@+id/textView1"
+     
+            android:textAlignment="center"
+              android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ff0004"  />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsername"
+                android:textSize="20dp"
+              android:textAlignment="center"
+            android:hint="@string/txtUsername_Hint" />
+        <Button
+            android:text="@string/play"
+            android:layout_width="match_parent"
+            android:layout_height="53.0dp"
+            android:id="@+id/btnPlay"
+            android:background="#ffb71c1c"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textAlignment="center"  />
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+          android:textSize="20dp"
+            android:textStyle="bold"
+        app:menu="@menu/navigation" />
+</RelativeLayout>
